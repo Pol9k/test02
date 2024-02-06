@@ -33,7 +33,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 
 .header{
-    background: #332208;
+    background: #164863;
 }
 .header__inner {
     display: flex;
@@ -61,6 +61,10 @@ font-family: 'Roboto Condensed', sans-serif; */
     left: 0;
     top: 9px;
 }
+.logo__link{
+    width: 8rem;
+    height: 4rem;
+}
 .menu__list {
     display: flex;
 }
@@ -82,7 +86,8 @@ font-family: 'Roboto Condensed', sans-serif; */
 .phone {
     font-size: 1.8rem;
     line-height: 2.1rem;
-    color: #fefefe;
+    color: #74E291;
+    color: #DDF2FD;
 }
 
 /* MAIN */
@@ -115,16 +120,16 @@ font-family: 'Roboto Condensed', sans-serif; */
 .application-btn {
     text-transform: uppercase;
     color: #fefefe;
-    background: #C5AC2D;
+    background: #FE7A36;
     padding: 1.6rem 1.9rem 1.5rem;
     transition: all .5s;
     border: 1px solid transparent;
     display: inline-block;
 }
 .application-btn:hover {
-    color: #C5AC2D;
+    color: #FE7A36;
     background: #fefefe;
-    border: 1px solid #C5AC2D;
+    border: 1px solid #FE7A36;
 }
 
 .top__slider {
@@ -153,14 +158,6 @@ font-family: 'Roboto Condensed', sans-serif; */
 .slick-active button {
     transform: scale(2);
 }
-.top__slider-text {
-    padding-right: 10rem;
-    text-align: right;
-    font-family: 'Fira Sans', sans-serif;
-}
-.top__slider-text span + span {
-    padding-left: 1.2rem;
-}
 
 .top__bottom {
     display: flex;
@@ -174,7 +171,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     justify-content: space-around;
 }
 .top__item {
-    border: 1px solid #1B1818;
+    border: 1px solid #164863;
     padding: 1rem;
     width: 15rem;
     height: 15rem;
@@ -191,7 +188,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     transform: scale(1.25);
 }
 
-.top__links {
+/* .top__links {
     padding-right: 8rem;
 }
 .top__link {
@@ -200,7 +197,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 .top__link + .top__link {
     margin-left: 2px;
-}
+} */
 /* SECTION certification */
 .certification{
     padding: 7rem 0;
@@ -248,7 +245,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     grid-gap: 2rem;
 }
 .renrt__item {
-    border: 1px solid #332208;
+    border: 1px solid #164863;
     min-height: 25rem;
     padding: 2rem 3.5rem;
     text-align: center;
@@ -304,6 +301,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     width: 1.6rem;
     height: 1.6rem;
     background: #332208;
+    background: #164863;
     border-radius: 50%;
     right: 0;
     top: 0.3rem;
@@ -339,27 +337,11 @@ font-family: 'Roboto Condensed', sans-serif; */
     width: 26.7rem;
     margin-left: auto;
 }
-.video-popup {
-    background-color: #C5AC2D;
-    text-transform: uppercase;
-    color: #fefefe;
-    padding: 0.6rem 3.4rem .6rem 6.4rem;
-    display: inline-block;
-    position: relative;
-}
-.video-popup::before {
-    content: '';
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
-    left: 3.2rem;
-    top: 1.2rem;
-    background: url(../images/PLAY.svg);
-}
+
 
 .reviews {
     padding: 10rem 0;
-    background-color: #332208;
+    background-color: #164863;
     color: #fefefe
 }
 .reviews__title {
@@ -374,36 +356,29 @@ font-family: 'Roboto Condensed', sans-serif; */
 .slick-initialized .reviews__item {
     display: flex;
 }
-.reviews__item {
-    border: 1px solid #C5AC2D;
-    padding: 4.5rem 3rem;
+.reviews__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+.reviews__item{
+    width: 150px;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 27rem;
-    min-height: 30rem;
-    text-align: center;
-    margin-right: 3rem;
-}
-.reviews__title-name {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-}
-.reviews__slider .slick-dots button {
-    background-color: #C5AC2D;
-}
-.reviews__slider .slick-dots {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 3.5rem;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
 }
-.reviews__slider button{
-    margin: 0 0.5rem;
-    line-height: 1.2rem;
+
+.reviews__item span{
+    color: aqua;
+    margin-top: 2rem;
 }
+
+/* !!!!!!!!!!!!!! */
 /* ecology */
 .ecology{
     padding: 10rem 0;
@@ -458,7 +433,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     text-transform: uppercase;
     color: #fefefe;
     display: inline-block;
-    background-color: #c5ac2d;
+    background-color: #FE7A36;
     padding: 1.6rem 3.6rem 1.5rem;
     margin-top: 5rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -470,36 +445,20 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 .feedback__btn:hover {
     background-color: #fefefe;
-    color: #c5ac2d;
-    border: 1px solid #c5ac2d;
+    color: #FE7A36;
+    border: 1px solid #FE7A36;
 }
 
 /* footer */
 .footer{
-    padding: 10rem 0 2.4rem;
-    background: #332208;
+    padding: 2rem 0;
+    background: #164863;
 }
 .footer__top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2.1rem;
 }
-.application-btn {
-}
-.footer__social{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer__social-item{
-
-}
-.footer__social-link{
-    margin: 0 1.5rem;
-}
-.footer__social-img{}
 
 @media (max-width: 1250px){
     .benefits__images {
@@ -507,9 +466,6 @@ font-family: 'Roboto Condensed', sans-serif; */
     }
 }
 @media (max-width: 1170px){
-    .footer__social {
-        display: block;
-    }
     .rent__inner {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -558,9 +514,6 @@ font-family: 'Roboto Condensed', sans-serif; */
     .footer .menu {
         display: none;
     }
-    .footer__social {
-        display: flex;
-    }
 }
 @media (max-width: 860px){
     .header {
@@ -575,7 +528,7 @@ font-family: 'Roboto Condensed', sans-serif; */
         top: 10rem;
         left: 0;
         right: 0;
-        background-color: #332208;
+        background-color: #164863;
         text-align: center;
         padding: 2rem 0;
         transform: translateY(-50rem);
@@ -614,6 +567,13 @@ font-family: 'Roboto Condensed', sans-serif; */
     .rent__item-title {
         margin-bottom: 2rem;
     }
+    .reviews__title {
+        margin-bottom: 2rem;
+    }
+    .reviews__inner{
+        flex-direction: column;
+        padding: 0;
+    }
 }
 @media (max-width: 525px){
     .top__items {
@@ -621,9 +581,6 @@ font-family: 'Roboto Condensed', sans-serif; */
     }
     .top__item {
         margin: 2rem;
-    }
-    .top__slider-text {
-        padding-right: 0;
     }
     .benefits__items {
         display: flex;
@@ -678,12 +635,6 @@ font-family: 'Roboto Condensed', sans-serif; */
     .top__link {
         display: inline-block;
         margin: 1rem 1.5rem;
-    }
-    .top__slider-text {
-        text-align: right;
-    }
-    .top__slider-text span {
-        display: block;
     }
     .renrt__item {
         margin: 3rem 0;

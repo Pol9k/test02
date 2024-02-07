@@ -188,16 +188,6 @@ font-family: 'Roboto Condensed', sans-serif; */
     transform: scale(1.25);
 }
 
-/* .top__links {
-    padding-right: 8rem;
-}
-.top__link {
-    color: #1B1818;
-    border-bottom: 1px solid #1B1818;
-}
-.top__link + .top__link {
-    margin-left: 2px;
-} */
 /* SECTION certification */
 .certification{
     padding: 7rem 0;
@@ -219,7 +209,6 @@ font-family: 'Roboto Condensed', sans-serif; */
 .rent__inner {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 .rent__content {
     min-width: 300px;
@@ -456,8 +445,22 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 .footer__top{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+}
+.footer__copyright{
+    font-size: 1rem;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    color: #FE7A36;
+}
+.footer__copyright p {
+    margin: 0 0.5rem;
+}
+.footer__top .phone{
+    margin-right: auto;
 }
 
 @media (max-width: 1250px){
